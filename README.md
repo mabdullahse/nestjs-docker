@@ -22,7 +22,7 @@ Dev - Configuration 1
 
 Dev - configuration 2
 
-1.
+1. use only docker-compose.yml
 
 Prod - configuration 3
 
