@@ -1,0 +1,17 @@
+services:
+  nestjs_api_prod:
+    build: 
+      context: .
+      dockerfile: Dockerfile.prod
+    ports:
+      - '3001:3001'
+    environment:
+      - PORT=3001
+      - NODE_ENV=development
+    volumes:
+      - ./src:/usr/src/app/src
+    
+      
+#Here in this app DB will be form production    
+
+# docker-compose -f docker-compose.prod.yml up --build
